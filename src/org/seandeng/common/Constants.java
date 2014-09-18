@@ -7,47 +7,47 @@ import java.util.Map;
 
 
 public final class Constants {
-	
-	public final static String INCOME_SELF = "1"; 
 
-	/**
-	 * ²úÆ·Æ·ÅÆ
-	 */
-	public final static String[] ARRAY_PROD_BRAND = {"ÀûµÃÓ¯","½¨ĞĞ²Æ¸»","Ç¬Í¼Àí²Æ","Ç¬Ôª","»ãµÃÓ¯",
-		"QDII","¶Ô¹«Õ®È¯²úÆ·","±¾Íâ±Ò×éºÏ²úÆ·","ĞÂ¹ÉËæĞÄ´ò","ÁúĞÅ",
-		"´ó·áÊÕ","ÆäËû"};
-	
-	/**
-	 * ´û¿îÖÖÀà
-	 */
-	public final static List LIST_LOAN_TYPE = new ArrayList() {
-		private static final long serialVersionUID = 7924517407280185281L;
-		{
-			add("·¢·Åµ¥±Ê´û¿î");
-			add("×ªÈÃµ¥±Ê´û¿î");
-			add("×ªÈÃ´û¿î°üÄÚµ¥Î»´û¿î");
-			add("×ªÈÃ¸öÈË´û¿î×Ê²ú°ü");
-		}
-	};
+    public final static String INCOME_SELF = "1";
 
-	/**
-	 * ÈËĞĞ²úÆ·ÀàĞÍ
-	 */
-	public final static Map MAP_PRODUCT_TYP_HP = new HashMap() {
-		private static final long serialVersionUID = -1527292751427350723L;
-		{
-			put("100", "ĞÅÍĞÀà");
-			put("200", "½á¹¹ĞÔ");
-			put("300", "QDII");
-			put("400", "ÆäËû");
-			put("500", "²»ÊÊÓÃ");
-		}
-	};
-	
+    /**
+     * äº§å“å“ç‰Œ
+     */
+    public final static String[] ARRAY_PROD_BRAND = {"åˆ©å¾—ç›ˆ","å»ºè¡Œè´¢å¯Œ","ä¹¾å›¾ç†è´¢","ä¹¾å…ƒ","æ±‡å¾—ç›ˆ",
+            "QDII","å¯¹å…¬å€ºåˆ¸äº§å“","æœ¬å¤–å¸ç»„åˆäº§å“","æ–°è‚¡éšå¿ƒæ‰“","é¾™ä¿¡",
+            "å¤§ä¸°æ”¶","å…¶ä»–"};
+
+    /**
+     * è´·æ¬¾ç§ç±»
+     */
+    public final static List LIST_LOAN_TYPE = new ArrayList() {
+        private static final long serialVersionUID = 7924517407280185281L;
+        {
+            add("å‘æ”¾å•ç¬”è´·æ¬¾");
+            add("è½¬è®©å•ç¬”è´·æ¬¾");
+            add("è½¬è®©è´·æ¬¾åŒ…å†…å•ä½è´·æ¬¾");
+            add("è½¬è®©ä¸ªäººè´·æ¬¾èµ„äº§åŒ…");
+        }
+    };
+
+    /**
+     * äººè¡Œäº§å“ç±»å‹
+     */
+    public final static Map MAP_PRODUCT_TYP_HP = new HashMap() {
+        private static final long serialVersionUID = -1527292751427350723L;
+        {
+            put("100", "ä¿¡æ‰˜ç±»");
+            put("200", "ç»“æ„æ€§");
+            put("300", "QDII");
+            put("400", "å…¶ä»–");
+            put("500", "ä¸é€‚ç”¨");
+        }
+    };
+
     public final static class SPRING_NAME{
-    	public static final String BB_SERVICE = "BB.BBService";
-    	public static final String BB_SUMMATE_SERVICE = "BB.BBSummateService";
-    	public static final String BB_AUDIT_SERVICE = "BB.BBAuditService";
+        public static final String BB_SERVICE = "BB.BBService";
+        public static final String BB_SUMMATE_SERVICE = "BB.BBSummateService";
+        public static final String BB_AUDIT_SERVICE = "BB.BBAuditService";
     }
-	
+
 }
