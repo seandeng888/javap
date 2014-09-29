@@ -8,9 +8,8 @@ public abstract class SystemPropertyUtils {
 	/** 系统属性占位符的后缀: "}" */
 	public static final String PLACEHOLDER_SUFFIX = "}";
 
-	/** Value separator for system property placeholders: ":" */
+	/** 系统属性占位符的值分隔符: ":" */
 	public static final String VALUE_SEPARATOR = ":";
-
 
 	private static final PropertyPlaceholderHelper strictHelper =
 			new PropertyPlaceholderHelper(PLACEHOLDER_PREFIX, PLACEHOLDER_SUFFIX, VALUE_SEPARATOR, false);
@@ -61,8 +60,8 @@ public abstract class SystemPropertyUtils {
 	}
 
     public static void main(String []args) {
-        System.setProperty("bb","bbbb");
-        System.setProperty("aaaabbbbcccc","4444");
-        System.out.println(resolvePlaceholders("aaa${aaaa${bb}cccc}aaa", true));
+        System.setProperty("root.key","${muse.root}");
+        System.setProperty("muse.root","D:\\project");
+        System.out.println(resolvePlaceholders("${root.key}/logs/app.log", true));
     }
 }

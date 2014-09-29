@@ -6,11 +6,7 @@ package org.seandeng.util;
 public class StringUtils {
 
     /**
-     * Test whether the given string matches the given substring
-     * at the given index.
-     * @param str the original string (or StringBuilder)
-     * @param index the index in the original string to start matching against
-     * @param substring the substring to match at the given index
+     * 测试给定的字符串是否包含给定的子字符串。
      */
     public static boolean substringMatch(CharSequence str, int index, CharSequence substring) {
         for (int j = 0; j < substring.length(); j++) {
