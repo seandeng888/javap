@@ -43,12 +43,13 @@ public class SystemProperties {
     }
 	
     public static void main(String [] args) {
-        java.util.Properties pp = System.getProperties();
+        /*java.util.Properties pp = System.getProperties();
         Enumeration<?> names = pp.propertyNames();
         String propertyKey = null;
         while(names.hasMoreElements()){
             propertyKey = (String)names.nextElement();
             System.out.println(propertyKeyCodeNameMapping.get(propertyKey) + "||" + propertyKey+"||"+pp.getProperty(propertyKey));
-        }
+        }*/
+        System.out.println("aaabbbaaa".indexOf("bbb"));  // 3
     }
 }
